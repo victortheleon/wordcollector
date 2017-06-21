@@ -1,0 +1,20 @@
+{
+  "content_scripts": [ {
+    "css": ["css/jquery-ui.css", "css/style.css", "css/simple-grid.min.css"],
+    "js": [ "js/jquery.js", "js/jquery-ui.js", "js/attrchange.js", "js/script.js" ],
+    "matches": [ "*://my.digiseller.ru/inside/myshop.asp"  ]
+  } ],
+  "description": "A simple addon to collect words from https://my.digiseller.ru/inside/myshop.asp",
+  "icons": {
+    "128": "img/128.png"
+  },
+  "manifest_version": 2,
+  "name": "Digiseller Assistant",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "*://my.digiseller.ru/inside/myshop.asp"
+  ],
+  "background": {
+    "scripts": ["js/jquery.js", "js/background.js"]
+  }
+}

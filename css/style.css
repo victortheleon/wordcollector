@@ -1,0 +1,17 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+	font-size: 1em;
+}
+
+.ui-draggable, .ui-droppable {
+	background-position: top;
+}
+
+.scroll-area {
+	overflow: scroll;
+	height: 70vw;
+	width: 16vw;
+}
